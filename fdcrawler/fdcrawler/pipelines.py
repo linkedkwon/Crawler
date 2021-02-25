@@ -11,7 +11,7 @@ from scrapy.exporters import CsvItemExporter, XmlItemExporter, JsonItemExporter
 
 class CsvPipeline(object):
     def __init__(self):
-        self.file = open("assets/detail.csv", 'wb')
+        self.file = open("assets/details.csv", 'wb')
         self.exporter = CsvItemExporter(self.file, encoding='utf-8-sig')
         self.exporter.start_exporting()
 

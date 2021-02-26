@@ -42,6 +42,7 @@ class DetailSpider(Spider):
             item['menu'] = response.xpath('//td[@height=\"70\"]/table/tr[2]/td[3]/text()').extract_first().strip()
             item['surtax'] = response.xpath('//td[@height=\"70\"]/table/tr[3]/td[3]/text()').extract_first().strip()
 
+        #
         except AttributeError as e:
             return
 

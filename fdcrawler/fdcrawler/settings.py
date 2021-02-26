@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = 'fdcrawler.spiders'
 #USER_AGENT = 'fdcrawler (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -64,9 +64,9 @@ ROBOTSTXT_OBEY = True
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'fdcrawler.pipelines.CsvPipeline': 300,
-    'scrapy.pipeline.images.ImagesPipeline': 1,
+    #'scrapy.pipeline.images.ImagesPipeline': 1,
 }
-IMAGES_STORE = 'assets/images'
+#IMAGES_STORE = 'assets/images'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
